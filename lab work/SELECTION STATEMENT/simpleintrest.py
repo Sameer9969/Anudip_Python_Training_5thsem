@@ -1,9 +1,9 @@
-# writw a program to calculate simple intrest
+# write a program to calculate simple intrest
 #--------------------------------
 #input of principle amount ,time, rate of intrest
 print("-----SIMPLE INTREST -----")
 principle = float(input("Enter the principle amount: "))
-time = float(input("enter the time: "))
+time = int(input("enter the time: "))
 rate = float(input("enter the rate of intrest:"))
 #--------------------------------
 print("----------------------------------------")
