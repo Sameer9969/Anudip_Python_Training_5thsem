@@ -13,8 +13,12 @@ print("rate of interest: ", rate)
 print("----------------------------------------")
 #--------------------------------
 #calculating the simple intrest
-if(principle<0 or time<0 or rate<0):
-    exit("principle amount , time and rate of intrest cannot be negative.....EXITED")
+if(principle<0 ):
+    exit("principle amount cannot be negative.....EXITED")
+if(time<0 ):
+    exit("time cannot be negative.....EXITED")
+if(rate<0 ):
+    exit("rate of interest cannot be negative.....EXITED")
 #--------------------------------
 
 simple_intrest = (principle * time * rate) / 100
