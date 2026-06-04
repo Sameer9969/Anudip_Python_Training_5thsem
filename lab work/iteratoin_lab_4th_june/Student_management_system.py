@@ -19,20 +19,25 @@ sub2 = int(input("enter the marks of sub2 :"))
 sub3 = int(input("enter the marks of sub3 :"))
 sub4 = int(input("enter the marks of sub4 :"))
 sub5 = int(input("enter the marks of sub5 :"))
+if(sub1 >0 and sub2 >0 and sub3 >0 and sub4 >0 and sub5 >0):
 
-total_marks = sub1 + sub2 + sub3 + sub4 + sub5
-print("total marks : ",total_marks)
-percentage = total_marks / 5
-print("percentage : ",percentage)
-if(percentage >= 90):
-    print("Grade : A+")
-elif(percentage >= 75):
-    print("Grade : A")
-elif(percentage >= 60):
-    print("Grade : B")
-elif(percentage >= 40):
-    print("Grade : C")
+
+    total_marks = sub1 + sub2 + sub3 + sub4 + sub5
+    print("total marks : ",total_marks)
+    percentage = (total_marks/500)*100
+    print("percentage : ",percentage)
+    if(percentage >= 90):
+        print("Grade : A+")
+    elif(percentage >= 75):
+        print("Grade : A")
+    elif(percentage >= 60):
+        print("Grade : B")
+    elif(percentage >= 40):
+        print("Grade : C")
+    else:
+        print("Grade : Fail")
+
 else:
-    print("Grade : Fail")
+    print("value cannot be negative")
 print("------------------------------")
 
