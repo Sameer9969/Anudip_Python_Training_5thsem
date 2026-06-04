@@ -5,15 +5,13 @@
 num = int(input("enter the number :"))
 i = 1
 count = 0
-print("Factors are: ", end="")
+print("Factors are: ", )
 
 while i <= num:
     if num % i == 0:
         print(i, end=" ")
         count += 1
     i += 1
-
-print()
 
 if count == 2:
     print("Prime Number")
