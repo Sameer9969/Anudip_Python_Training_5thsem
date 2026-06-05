@@ -13,7 +13,7 @@ seats = [1, 0, 1, 1, 0, 0, 1, 1, 1, 0]
 booked = 0
 available = 0
 
-available_seats = []
+available_seat = []
 
 # Count booked and available seats
 for seat in seats:
@@ -31,7 +31,7 @@ for i in range(len(seats)):
 # Create list of available seat numbers
 for i in range(len(seats)):
     if seats[i] == 0:
-        available_seats.append(i + 1)
+        available_seat.append(i + 1)
 
 # Occupancy Percentage
 occupancy = (booked * 100) / len(seats)
@@ -39,7 +39,7 @@ occupancy = (booked * 100) / len(seats)
 print("Booked Seats:", booked)
 print("Available Seats:", available)
 print("First Available Seat:", first_available)
-print("Available Seat Numbers:", available_seats)
+print("Available Seat Numbers:", available_seat)
 print("Bus Occupancy:", occupancy, "%")
 
 if occupancy > 70:
