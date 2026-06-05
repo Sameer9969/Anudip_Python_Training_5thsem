@@ -17,20 +17,36 @@
  
 # Total Travelled: 8 floors
 
+# Lift starts at floor 0
 current_floor = 0
+
+# Total floors travelled
 total_travel = 0
 
 while True:
+    # Take destination floor from user
     dest = int(input("Enter destination floor (-1 to stop): "))
 
+    # Stop condition
     if dest == -1:
         break
 
-    travel = abs(dest - current_floor)
+    # If going up or down, calculate distance
+    travel = dest - current_floor
 
+    # If negative, make it positive (distance can't be negative)
+    if travel < 0:
+        travel = -travel
+
+    # Show floors travelled in this trip
     print("Travelled:", travel, "floors")
 
-    total_travel += travel
+    # Add to total travel
+    total_travel = total_travel + travel
+
+    # Update current floor
     current_floor = dest
 
+# Final result
 print("Total Travelled:", total_travel, "floors")
+print("------------------------------")
