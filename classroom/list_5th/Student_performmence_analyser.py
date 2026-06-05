@@ -38,9 +38,9 @@ print("Highest Mark =", highest_mark)
 print("Lowest Mark =", lowest_mark)
 
 # 4. Create a new list containing marks above 75.
-above_75 = []
+above75 = []
 for mark in marks:
     if mark > 75:
-        above_75.append(mark)
+        above75.append(mark)
 
-print("Marks above 75:", above_75)
+print("Marks above 75:", above75)
