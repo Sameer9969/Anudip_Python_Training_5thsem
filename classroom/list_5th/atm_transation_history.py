@@ -20,7 +20,7 @@ withdrawal_count = 0
 
 for amount in transactions:
 # current balence
-    balance += amount
+    balance = balance +amount
 # total amount deposits and withdrawals. 
     if amount > 0:
         deposits.append(amount)
