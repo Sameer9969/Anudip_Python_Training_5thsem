@@ -5,8 +5,8 @@
 num = []
 #taking input
 for i in range(1, 21):
-    number = int(input("enter the  number"))
-    num.append(number)
+    num1 = int(input("enter the  number"))
+    num.append(num1)
 
 # the number that have to remove and reverse the list
 
