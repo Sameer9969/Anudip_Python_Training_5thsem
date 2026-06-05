@@ -35,4 +35,4 @@ for qty in stock:
 print("Out of Stock Products :", out_of_stock)
 print("Need Restocking :", restocking)
 print("Available Products :", available_count)
-print("Stock >= 15 :", good_stock)
+print("Stock >= 15 Products :", good_stock)
