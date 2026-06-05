@@ -13,12 +13,12 @@
 # <40 Fail 
 # Also display the number of subjects failed.
 #--------------------------------------
-print("enter hte nummber of all four subject")
-sub1 = int(input("enter the marks of sub1 :"))
-sub2 = int(input("enter the marks of sub2 :"))
-sub3 = int(input("enter the marks of sub3 :"))
-sub4 = int(input("enter the marks of sub4 :"))
-sub5 = int(input("enter the marks of sub5 :"))
+print("enter the nummber of all five subject and ensure the all entered number is positive")
+sub1 = int(input("enter the marks of math :"))
+sub2 = int(input("enter the marks of english :"))
+sub3 = int(input("enter the marks of science :"))
+sub4 = int(input("enter the marks of ds :"))
+sub5 = int(input("enter the marks of coa :"))
 if(sub1 >0 and sub2 >0 and sub3 >0 and sub4 >0 and sub5 >0):
 
 
