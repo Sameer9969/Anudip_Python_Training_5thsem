@@ -9,7 +9,9 @@ print("length: ", len,"cm")
 print("breadth: ", bre,"cm")
 print("----------------------------------------")
 #VALIDATION OF THE LENGTH AND BREADTH
-if(len<0 or bre<0):
+if(len<0 ):
+    exit("length and breadth cannot be negative.....EXITED")
+if(bre<0):
     exit("length and breadth cannot be negative.....EXITED")
 #-----------------------------------------
 #CALCULATING THE PERIMETER OF THE RECTANGLE
