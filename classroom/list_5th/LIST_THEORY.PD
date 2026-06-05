@@ -1,0 +1,23 @@
+Lists in Python 
+marks = [87, 64, 33, 95, 76] 
+A built - in data type that stores set of values 
+It can store elements of different types (integer,float, string,etc.) 
+#marks[0], marks[1]..student = [”Karan”, 85, “Delhi”] 
+#student[0], student[1]..student[0] = “Arjun” #allow
+
+list_name [ starting_idx : ending_idx ] 
+#ending idx is not included 
+marks = [87, 64, 33, 95, 76] 
+marks[ 1 : 4 ] is [64, 33, 95]
+marks[ : 4 ] is sameasmarks[ 0 : 4]
+marks[ 1 : ] is sameasmarks[ 1 : len(marks) ] 
+marks[ -3 : -1 ] is [33, 95]
+
+List = [2,3,4,5]
+list.append (4) #adds one elementat the end
+list. sort () #sorts in ascendingorder [1, 2, 3]
+list. sort( reverse=True ) #sorts in descending order
+list. reverse( ) #reverses list 
+list. insert ( idx, el ) #insert element at index
+list. remove( 1 ) #removes first occurrence of element list = [2, 1, 3, 1] list. 
+pop( idx ) #removes elementat idx
