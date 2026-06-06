@@ -74,7 +74,8 @@ print("Id: ", students [-1][0])
 
 print("Name: ", students [-1][1])
 
-print("Course: ", students[-1][2]) print("Fee Paid: Rs", students[-1][3])
+print("Course: ", students[-1][2]) 
+print("Fee Paid: Rs", students[-1][3])
 
 print(" -")
 
@@ -83,8 +84,7 @@ print(" -")
 print(" Student's Records -----")
 
 for record in students:
-
-print("Student id: ", record[0])
+    print("Student id: ", record[0])
 
 print("Name: ", record [1])
 
@@ -107,10 +107,8 @@ count = 0
 for record in students:
 
     if(record[1] == 'Rahul'):
-
-    count +=1
-
-    break
+        count +=1
+        break
 
 if(count == 0):
 
