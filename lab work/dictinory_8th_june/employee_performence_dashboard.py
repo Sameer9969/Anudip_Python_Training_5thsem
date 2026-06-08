@@ -124,3 +124,21 @@ print(average)
 print("Poor: ")
 print(poor)
 #===========================================
+
+"""output =
+employees that is scoring above 80:
+EMP101
+EMP104
+EMP105
+EMP107
+Employees Needing Improvement:  3
+Top Performer:  EMP105 ( 97 )
+Average Score:  71.3
+Excellent: 
+['EMP101', 'EMP105']
+Good: 
+['EMP102', 'EMP104', 'EMP107']
+Average: 
+['EMP108', 'EMP110']
+Poor: 
+['EMP103', 'EMP106', 'EMP109']"""
