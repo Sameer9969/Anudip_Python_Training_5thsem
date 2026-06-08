@@ -118,3 +118,18 @@ for quantity in sales.values():
 
 print("\nProducts Having Sales Between 10 and 30:", count)
 
+"""output = 
+Products Sold More Than 20 Times:
+Mouse
+Keyboard
+Headphones
+Router
+
+Best Selling Product: Mouse ( 45 )
+Least Selling Product: Printer ( 8 )
+
+Total Units Sold: 213
+
+Products Requiring Promotion: ['Monitor', 'Printer', 'Tablet']
+
+Products Having Sales Between 10 and 30: 6"""
