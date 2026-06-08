@@ -100,4 +100,10 @@ for temp in temperature.values():
     if 35 <= temp <= 40:
         count += 1
 print("Cities Between 35°C and 40°C: ",count)
-#==========================================
+#=========================================
+"""output = 
+Coolest City:  Bengaluru ( 28 )
+Average Temperature:  36.8
+Pleasant Cities: 
+['Mumbai', 'Bengaluru', 'Pune']
+Cities Between 35°C and 40°C:  4"""
