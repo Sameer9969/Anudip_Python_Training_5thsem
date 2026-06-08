@@ -8,3 +8,6 @@ for i in sentence:
         else:
             vlowel[i] = 1
 print(vlowel)
+"""output 
+enter the sentence :sameer singh
+{'a': 1, 'e': 2, 'i': 1}S"""
