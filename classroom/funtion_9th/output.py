@@ -6,8 +6,7 @@ per the data provided by user or operation selected by user display the
 result of operation. This task will be repeated again and again until 
 user select option to exit from that figure
 """
-
-import output
+from figure import *
 
 while True:
     print("\n===== SHAPE CALCULATOR =====")
@@ -23,7 +22,9 @@ while True:
         length = float(input("Enter Length: "))
         breadth = float(input("Enter Breadth: "))
 
-        area, perimeter = output.rectangle(length, breadth)
+        perimeter = perimeter_rectangle(length, breadth)
+        area = area_rectangle(length, breadth)
+
 
         print("Area =", area)
         print("Perimeter =", perimeter)
@@ -31,7 +32,9 @@ while True:
     elif choice == 2:
         radius = float(input("Enter Radius: "))
 
-        area, perimeter = output.circle(radius)
+        perimeter = perimeter_circle(radius)
+        area = area_circle(radius)
+
 
         print("Area =", area)
         print("Perimeter =", perimeter)
@@ -39,7 +42,10 @@ while True:
     elif choice == 3:
         side = float(input("Enter Side: "))
 
-        area, perimeter = output.square(side)
+        perimeter = perimeter_square(side)
+        area = area_square(side)
+
+
 
         print("Area =", area)
         print("Perimeter =", perimeter)
@@ -48,7 +54,9 @@ while True:
         base = float(input("Enter Base: "))
         height = float(input("Enter Height: "))
 
-        area, perimeter = output.triangle(base, height)
+        perimeter = perimeter_triangle(base, height)
+        area = area_triangle(base, height)
+
 
         print("Area =", area)
         print("Perimeter =", perimeter)

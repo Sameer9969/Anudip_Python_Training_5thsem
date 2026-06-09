@@ -8,23 +8,36 @@ user select option to exit from that figure
 """
 
 """area and perimeter of a rectangle """
-def rectangle(lenght,breath):
+def area_rectangle(lenght,breath):
     area=lenght*breath
+    return area
+
+def perimeter_rectangle(lenght,breath):
     perimeter=2*(lenght+breath)
-    return area,perimeter
+    return perimeter
+
 """area and perimeter of a circle"""
-def circle(radius):
+def area_circle(radius):
     area=3.14*radius*radius
+    return area
+
+def perimeter_circle(radius):
     perimeter=2*3.14*radius
-    return area,perimeter
+    return perimeter
 """area and perimeter of a square"""
-def square(side):
+def area_square(side):
     area=side*side
+    return area
+
+def perimeter_square(side):
     perimeter=4*side
-    return area,perimeter
+    return perimeter
 """area and perimeter of a triangle"""
-def triangle(base,height):
+def area_triangle(base,height):
     area=0.5*base*height
-    perimeter=3*base
-    return area,perimeter
+    return area,
+
+def perimeter_triangle(base,height):
+    perimeter=base+height
+    return perimeter
 
