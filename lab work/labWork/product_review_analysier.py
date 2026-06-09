@@ -11,7 +11,7 @@ Write a program to:
 5. Count words having more than 5 characters.  
 6. Display words in reverse order.  
 7. Create a list of unique words.  
- 
+
 Sample Output 
 Total Words: 8 
  
@@ -40,19 +40,12 @@ Unique Words:
 review = "This product is excellent excellent excellent and very useful"
 
 #----------------------------------------------
-# Convert sentence into words (Without split)
+# Convert sentence into words
 #----------------------------------------------
-words = []
-word = ""
 
-for ch in review:
-    if ch != " ":
-        word += ch
-    else:
-        words.append(word)
-        word = ""
+words = review.split()
 
-words.append(word)   # last word add karne ke liye
+print(words)
 
 #----------------------------------------------
 # 1. Count total words
