@@ -58,7 +58,7 @@ print("Total Words:", len(words))
 frequency = {}
 
 for word in words:
-    if word in frequency:
+    if (word in frequency):
         frequency[word] += 1
     else:
         frequency[word] = 1
@@ -109,7 +109,7 @@ print("\nWords Having More Than 5 Characters:", count)
 #----------------------------------------------
 print("\nWords in Reverse Order:")
 
-for i in range(len(words)-1, ):
+for i in range(len(words)-1,-1,-1 ):
     print(words[i], end=" ")
 
 #----------------------------------------------
