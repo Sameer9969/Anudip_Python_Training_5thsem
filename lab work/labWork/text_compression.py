@@ -1,16 +1,5 @@
-"""10. Text Compression Analyzer 
-Problem Statement 
-A compressed message is given: 
-AAABBBCCCDDDAAA 
-Tasks 
-Write a program to: 
-1. Count occurrences of each character.  
-2. Create a dictionary of character frequencies.  
-3. Display unique characters.  
-4. Find the most frequent character.  
-5. Create a compressed output:  
-A3B3C3D3A3 
-6. Calculate compression ratio.  
+"""
+3 
 Sample Output 
 Original Text: 
 AAABBBCCCDDDAAA 
