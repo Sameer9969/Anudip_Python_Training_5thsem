@@ -34,11 +34,13 @@ Password Strength: Strong"""
 # 1. Minimum length 8
 #----------------------------------------------
 password = """Python@2026!"""
-
-if len(password) < 8:
-    print("Password Strength: Weak")
+if(len(password) == 0):
+    print("a password cannot be zero")
 else:
-    print("Password Strength: Strong")
+    if len(password) < 8:
+        print("Password Strength: Weak")
+    else:
+        print("Password Strength: Strong")
 #----------------------------------------------
 # 2. Count lowercase letters.
 #----------------------------------------------
