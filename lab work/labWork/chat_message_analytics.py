@@ -46,22 +46,25 @@ total_words = count + 1
 print("Total Words:", total_words)
 #_____________________________________________
 # 3.Find the longest word. 
+# 4.Find the shortest word.
 #_____________________________________________
 longest_word = ""
 #split() bhi string ko character by character traverse karta hai,
 #  space milne par current word ko list me add karta hai aur naya
 #  word banana start karta hai.
-for word in message.split():
+words = message.split()
+
+longest_word = words[0]
+shortest_word = words[0]
+
+for word in words:
     if len(word) > len(longest_word):
         longest_word = word
-print("Longest Word:", longest_word)
-#_____________________________________________
-# 4.Find the shortest word. 
-#_____________________________________________
-shortest_word = message.split()[0]
-for word in message.split():
+
     if len(word) < len(shortest_word):
         shortest_word = word
+
+print("Longest Word :", longest_word)
 print("Shortest Word:", shortest_word)
 #_____________________________________________
 # 5.Count how many times the word "Python" appears. 
