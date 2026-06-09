@@ -7,7 +7,7 @@ result of operation. This task will be repeated again and again until
 user select option to exit from that figure
 """
 from figure import *
-while True:
+while True: 
 
     print("\n===== Figure Menu =====")
     print("1. Circle")
@@ -113,4 +113,6 @@ while True:
 
     if choice.upper() != "Y":
         print("Thank You for using Geometry Calculator.")
+
+        
         break
