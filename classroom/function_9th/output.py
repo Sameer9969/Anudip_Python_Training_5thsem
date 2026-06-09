@@ -7,63 +7,110 @@ result of operation. This task will be repeated again and again until
 user select option to exit from that figure
 """
 from figure import *
-
 while True:
-    print("\n===== SHAPE CALCULATOR =====")
-    print("1. Rectangle")
-    print("2. Circle")
-    print("3. Square")
-    print("4. Triangle")
-    print("5. Exit")
 
-    choice = int(input("Enter your choice: "))
+    print("\n===== Figure Menu =====")
+    print("1. Circle")
+    print("2. Square")
+    print("3. Rectangle")
+    print("4. Exit")
 
-    if choice == 1:
+    figure_choice = int(input("Enter your choice: "))
+
+    if figure_choice == 4:
+        print("Thank You for using Geometry Calculator.")
+        break
+
+    # Circle
+    if figure_choice == 1:
+        radius = float(input("Enter Radius: "))
+
+        if radius <= 0:
+            print("Radius must be positive.")
+            continue
+
+        while True:
+            print("\n----- Operation Menu -----")
+            print("1. Area")
+            print("2. Perimeter")
+            print("3. Change Figure")
+
+            op = int(input("Enter your choice: "))
+
+            if op == 1:
+                print("Area of Circle =", area_circle(radius))
+
+            elif op == 2:
+                print("Perimeter of Circle =", perimeter_circle(radius))
+
+            elif op == 3:
+                break
+
+            else:
+                print("Invalid Choice")
+
+    # Square
+    elif figure_choice == 2:
+        side = float(input("Enter Side: "))
+
+        if side <= 0:
+            print("Side must be positive.")
+            continue
+
+        while True:
+            print("\n----- Operation Menu -----")
+            print("1. Area")
+            print("2. Perimeter")
+            print("3. Change Figure")
+
+            op = int(input("Enter your choice: "))
+
+            if op == 1:
+                print("Area of Square =", area_square(side))
+
+            elif op == 2:
+                print("Perimeter of Square =", perimeter_square(side))
+
+            elif op == 3:
+                break
+
+            else:
+                print("Invalid Choice")
+
+    # Rectangle
+    elif figure_choice == 3:
         length = float(input("Enter Length: "))
         breadth = float(input("Enter Breadth: "))
 
-        perimeter = perimeter_rectangle(length, breadth)
-        area = area_rectangle(length, breadth)
+        if length <= 0 or breadth <= 0:
+            print("Length and Breadth must be positive.")
+            continue
 
+        while True:
+            print("\n----- Operation Menu -----")
+            print("1. Area")
+            print("2. Perimeter")
+            print("3. Change Figure")
 
-        print("Area =", area)
-        print("Perimeter =", perimeter)
+            op = int(input("Enter your choice: "))
 
-    elif choice == 2:
-        radius = float(input("Enter Radius: "))
+            if op == 1:
+                print("Area of Rectangle =", area_rectangle(length, breadth))
 
-        perimeter = perimeter_circle(radius)
-        area = area_circle(radius)
+            elif op == 2:
+                print("Perimeter of Rectangle =", perimeter_rectangle(length, breadth))
 
+            elif op == 3:
+                break
 
-        print("Area =", area)
-        print("Perimeter =", perimeter)
-
-    elif choice == 3:
-        side = float(input("Enter Side: "))
-
-        perimeter = perimeter_square(side)
-        area = area_square(side)
-
-
-
-        print("Area =", area)
-        print("Perimeter =", perimeter)
-
-    elif choice == 4:
-        base = float(input("Enter Base: "))
-        height = float(input("Enter Height: "))
-
-        perimeter = perimeter_triangle(base, height)
-        area = area_triangle(base, height)
-
-
-        print("Area =", area)
-        print("Perimeter =", perimeter)
-
-    elif choice == 5:
-        print("Program Closed")
-        break
+            else:
+                print("Invalid Choice")
 
     else:
-        print("Invalid Choice! Please Try Again.")
+        print("Invalid Figure Choice")
+
+    choice = input("\nDo you want to continue using the application? (Y/N): ")
+
+    if choice.upper() != "Y":
+        print("Thank You for using Geometry Calculator.")
+        break
