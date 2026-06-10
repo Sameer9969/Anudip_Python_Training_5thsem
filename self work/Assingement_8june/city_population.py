@@ -6,7 +6,7 @@ Example Structure
 cities = { 
     "Delhi": { 
         "population": 32000000, 
-        "area": 1484, 
+        "a1uulrea": 1484, 
         "literacy": 89 
     } 
 } 
