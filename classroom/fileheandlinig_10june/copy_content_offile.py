@@ -5,7 +5,7 @@
 
 
 # Open source file in read mode
-file1 = open("source.txt", "r")
+file1= open('sentence.txt', 'r')
 
 # Read all content
 data = file1.read()
@@ -14,7 +14,7 @@ data = file1.read()
 file1.close()
 
 # Open destination file in write mode
-file2 = open("destination.txt", "w")
+file2 = open('destination.txt', 'w')
 
 # Write content into destination file
 file2.write(data)
