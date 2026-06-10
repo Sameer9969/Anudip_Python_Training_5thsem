@@ -79,7 +79,7 @@ print("Available Seats:", available)
 
 print("\nFirst Available Seat:", first_available(seats))
 
-print("\nOccupancy Percentage:", round(occupancy_percentage(seats), 2), "%")
+print("\nOccupancy Percentage:", occupancy_percentage(seats), "%")
 
 
 display_available_seats(seats)
