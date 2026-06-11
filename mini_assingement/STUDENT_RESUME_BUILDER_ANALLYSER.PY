@@ -14,7 +14,7 @@ The system should:
 10. Create a summary dashboard.  
 Expected Output 
 Resume Analysis Report 
-Total Words: 420 
+Total Words: 420 1222
 Total Characters: 2650 
 Email Found: 1 
 Phone Numbers Found: 1 
