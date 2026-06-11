@@ -10,7 +10,7 @@ Requirements
 5. Find longest word.  
 6. Find shortest word.  
 7. Find the most frequent word.  
-8. Create a dictionary of word frequencies.  
+8. Create a dictionary of word f11requencies.  
 9. Display words appearing only once.  
 10. Display words appearing more than 5 times.  
 11. Count words starting with each alphabet.  
