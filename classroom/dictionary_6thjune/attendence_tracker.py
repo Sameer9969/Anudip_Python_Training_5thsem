@@ -19,4 +19,3 @@ print("\nStudents who are Present:")
 for roll_no in attendance:
     if attendance[roll_no] == "P" or attendance[roll_no] == "p":
         print(roll_no)
-  
