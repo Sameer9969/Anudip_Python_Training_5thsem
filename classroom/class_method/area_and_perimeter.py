@@ -1,3 +1,15 @@
+"""2. Rectangle Calculator (Basic) 
+Problem Statement: 
+Create a Rectangle class with attributes length and breadth. 
+Implement methods to: 
+• Calculate the area.  
+• Calculate the perimeter.  
+• Display the dimensions and results.  
+Sample Output: 
+Length     : 12 
+Breadth    : 8 
+Area       : 96 
+Perimeter  : 40 """
 #area and perimeter of reactangle 
 class Rectangle:
     def __init__(self,lenght,breath):
