@@ -1,0 +1,4 @@
+CASE101,E001,CCTV Footage
+CASE101,E002,Fingerprint
+CASE102,E003,Mobile Phone
+CASE103,E004,Blood Sample
