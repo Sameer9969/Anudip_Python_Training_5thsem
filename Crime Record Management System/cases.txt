@@ -1,0 +1,4 @@
+CASE101,F101,Open
+CASE102,F102,Under Investigation
+CASE103,F103,Evidence Collected
+CASE104,F104,Closed
