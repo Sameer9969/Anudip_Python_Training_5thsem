@@ -69,7 +69,7 @@ for count in traffic:
 # Count occurrences
 print("\nLow Traffic Intervals:", len(low))
 print("Moderate Traffic Intervals:", len(moderate))
-print("High Traffic Intervals:", len(high))
+print("High Traffic Interval/s:", len(high))
 
 # Peak traffic interval
 peak = max(traffic)
