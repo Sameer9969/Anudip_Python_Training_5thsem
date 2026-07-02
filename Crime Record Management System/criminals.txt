@@ -1,0 +1,4 @@
+C101,Ramesh,35,Theft
+C102,Ajay,28,Fraud
+C103,Ravi,30,Robbery
+C104,Aman,40,Assault
